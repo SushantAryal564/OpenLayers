@@ -1,0 +1,66 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "City": "Bihar"
+      },
+      "geometry": {
+        "coordinates": [86.07070334271822, 25.735459927765874],
+        "type": "Point"
+      },
+      "id": 0
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "City": "Luknow"
+      },
+      "geometry": {
+        "coordinates": [80.22817203408022, 26.419645530930126],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "City": "Kanpur"
+      },
+      "geometry": {
+        "coordinates": [80.83136545214597, 26.819629949654967],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "City": "Bhagalpur"
+      },
+      "geometry": {
+        "coordinates": [82.10842545551202, 26.79220426041583],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "City": "Mau"
+      },
+      "geometry": {
+        "coordinates": [84.3329864610522, 26.1835076440193],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "City": "Rewa"
+      },
+      "geometry": {
+        "coordinates": [82.06826301850867, 26.274355678299656],
+        "type": "Point"
+      }
+    }
+  ]
+}
