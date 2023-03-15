@@ -2,13 +2,25 @@ import React, { useEffect } from "react";
 import Draw from "ol/interaction/Draw";
 import { Vector as VectorSource } from "ol/source";
 import { Tile as TileLayer, Vector as VectorLayer } from "ol/layer";
+import image from "./../icon/marker.png";
+import { Style, Icon } from "ol/style";
+
 function DrawFeature({ map }) {
   useEffect(() => {
     if (!map) return;
     const source = new VectorSource({ warpX: false });
+    var markerStyle = new Style({
+      image: new Icon({
+        src: image,
+        scale: 0.05,
+      }),
+    });
     const vector = new VectorLayer({
       source: source,
+      zIndex: 50,
+      style: markerStyle,
     });
+
     map.addLayer(vector);
     const typeSelect = document.getElementById("type");
     let draw;

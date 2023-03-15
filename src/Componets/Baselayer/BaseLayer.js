@@ -14,14 +14,14 @@ function BaseLayer({ map }) {
     source: new OSM({
       url: "https://server.arcgisonline.com/ArcGIS/rest/services/World_Terrain_Base/MapServer/tile/{z}/{y}/{x}",
     }),
-    visible: true,
+    visible: false,
     title: "Terrain",
   });
   const EsriImagery = new TileLayer({
     source: new OSM({
       url: "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
     }),
-    visible: false,
+    visible: true,
     title: "World Imagery",
   });
   useEffect(() => {

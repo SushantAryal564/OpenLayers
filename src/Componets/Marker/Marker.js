@@ -11,16 +11,18 @@ function Marker({ map }) {
     const format = new GeoJSON({ featureProjection: "EPSG:3857" });
     const features = format.readFeatures(cityjson);
     var vectorSource = new VectorSource({ features });
-    const vectorLayer = new VectorLayer({
-      source: vectorSource,
-      zIndex: 10,
-    });
     var markerStyle = new Style({
       image: new Icon({
         src: image,
         scale: 0.05,
       }),
     });
+    const vectorLayer = new VectorLayer({
+      source: vectorSource,
+      zIndex: 10,
+      style: markerStyle,
+    });
+
     vectorSource.getFeatures().forEach(function (feature) {
       feature.setStyle(markerStyle);
     });
